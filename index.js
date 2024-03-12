@@ -90,7 +90,6 @@ const createBundleTemplate = (entry) => {
   // 获取所有依赖
   const moduleTree = buildModule(entry);
   const modules = moduleTreeToQueue(moduleTree);
-  console.log("modules", modules);
 
   // 生成打包的模板，也就是打包的真正过程
   const bundledCode = `
